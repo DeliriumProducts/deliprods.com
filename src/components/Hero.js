@@ -1,11 +1,17 @@
-import { Flex, Heading } from '@chakra-ui/react'
+import { Button, Flex, Heading, Image } from "@chakra-ui/react";
 
-export const Hero = ({ title }) => (
-  <Flex justifyContent="center" alignItems="center" height="100vh">
-    <Heading fontSize="10vw">{title}</Heading>
+export const Hero = () => (
+  <Flex
+    justifyContent="center"
+    alignItems="center"
+    h="100vh"
+    w="100%"
+    flexWrap="wrap"
+  >
+    <Flex flexDir="column">
+      <Heading>Making your life sweeter!</Heading>
+      <Button>Hire us!</Button>
+    </Flex>
+    <Image src="dplogo.png" />
   </Flex>
-)
-
-Hero.defaultProps = {
-  title: 'with-chakra-ui',
-}
+);
