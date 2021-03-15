@@ -1,4 +1,4 @@
-import { Button, Flex, Heading, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image } from "@chakra-ui/react";
 
 export const Hero = () => (
   <Flex
@@ -10,8 +10,10 @@ export const Hero = () => (
   >
     <Flex flexDir="column">
       <Heading>Making your life sweeter!</Heading>
-      <Button>Hire us!</Button>
+      <Box alignSelf="center" m={4}>
+        <Button>Hire us!</Button>
+      </Box>
     </Flex>
-    <Image src="dplogo.png" />
+    <Image src="dplogo.png" boxSize={96} />
   </Flex>
 );
